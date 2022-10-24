@@ -28,6 +28,7 @@ app.post('/', function(req, res){
             Value 1: ${data.Value_1} 
             Value 2: ${data.Value_2} 
             Result: ${Result}`);
+        return;
     };
 
     if(data.Operation == 'sub'){
@@ -42,6 +43,7 @@ app.post('/', function(req, res){
             Value 1: ${data.Value_1} 
             Value 2: ${data.Value_2} 
             Result: ${Result}`);
+        return;
     };
     
     if(data.Operation == 'mul'){
@@ -56,6 +58,7 @@ app.post('/', function(req, res){
             Value 1: ${data.Value_1} 
             Value 2: ${data.Value_2} 
             Result: ${Result}`);
+        return;
     }; 
     
     if(data.Operation == 'div'){
@@ -70,6 +73,7 @@ app.post('/', function(req, res){
             Value 1: ${data.Value_1} 
             Value 2: ${data.Value_2} 
             Result: ${Result}`);
+        return;
     };  
 
     res.redirect('/');
