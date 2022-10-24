@@ -18,23 +18,58 @@ app.post('/', function(req, res){
 
     if(data.Operation == 'add'){
         let Result = arithmeticFunctions.add(parseInt(data.Value_1), parseInt(data.Value_2));
-        res.send(`Operation: Addition, Value 1: ${data.Value_1}, Value 2: ${data.Value_2}, Result: ${Result}`);
-        console.log(`Operation: Addition, Value 1: ${data.Value_1}, Value 2: ${data.Value_2}, Result: ${Result}`);
+        res.send(
+            `Operation: Addition 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
+        console.log(
+            `Operation: Addition 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
     };
 
     if(data.Operation == 'sub'){
         let Result = arithmeticFunctions.sub(parseInt(data.Value_1), parseInt(data.Value_2));
-        res.send(`Operation: Subtraction, Value 1: ${data.Value_1}, Value 2: ${data.Value_2}, Result: ${Result}`);
+        res.send(
+            `Operation: Subtraction 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
+        console.log(
+            `Operation: Subtraction 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
     };
     
     if(data.Operation == 'mul'){
         let Result = arithmeticFunctions.multiply(parseInt(data.Value_1), parseInt(data.Value_2));
-        res.send(`Operation: Multiplication, Value 1: ${data.Value_1}, Value 2: ${data.Value_2}, Result: ${Result}`);
+        res.send(
+            `Operation: Multiplication 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
+        console.log(
+            `Operation: Multiplication 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
     }; 
     
     if(data.Operation == 'div'){
         let Result = arithmeticFunctions.divide(parseInt(data.Value_1), parseInt(data.Value_2));
-        res.send(`Operation: Division, Value 1: ${data.Value_1}, Value 2: ${data.Value_2}, Result: ${Result}`);
+        res.send(
+            `Operation: Division 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
+        console.log(
+            `Operation: Division 
+            Value 1: ${data.Value_1} 
+            Value 2: ${data.Value_2} 
+            Result: ${Result}`);
     };  
 
     res.redirect('/');
